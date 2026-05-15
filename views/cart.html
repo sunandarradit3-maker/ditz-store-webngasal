@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keranjang Belanja - DiTz Store</title>
+  <link rel="stylesheet" href="/public/css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Keranjang Belanja</h1>
+    <nav>
+      <a href="/">Beranda</a>
+    </nav>
+  </header>
+  <main>
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Produk</th>
+          <th>Harga</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ items }}
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2" style="text-align: right;">Total:</td>
+          <td><strong>{{ total }}</strong></td>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="actions">
+      <a href="/checkout" class="button">Checkout</a>
+    </div>
+  </main>
+</body>
+</html>
