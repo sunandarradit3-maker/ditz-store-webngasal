@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kelola Produk - Admin - DiTz Store</title>
+  <link rel="stylesheet" href="/public/css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Kelola Produk</h1>
+    <nav>
+      <a href="/admin/dashboard">Dashboard</a>
+      <a href="/admin/orders">Pesanan</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Tambah Produk</h2>
+      <form method="POST" action="/admin/products/add" class="add-product-form">
+        <label>Nama</label>
+        <input type="text" name="name" required />
+        <label>Harga (Rp)</label>
+        <input type="number" name="price" required />
+        <label>Deskripsi</label>
+        <textarea name="description"></textarea>
+        <label>Nama File Gambar (letakkan di folder public/images)</label>
+        <input type="text" name="image" placeholder="contoh: produk1.jpg" />
+        <button type="submit" class="button">Tambah</button>
+      </form>
+    </section>
+    <section>
+      <h2>Daftar Produk</h2>
+      <table>
+        <thead><tr><th>ID</th><th>Nama</th><th>Harga</th><th>Aksi</th></tr></thead>
+        <tbody>
+          {{ products }}
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
