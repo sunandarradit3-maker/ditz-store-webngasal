@@ -1,0 +1,30 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Kaos DITZ Logo",
+      "price": 50000,
+      "description": "Kaos dengan logo DiTz Store, bahan katun adem.",
+      "image": "placeholder.png"
+    },
+    {
+      "id": 2,
+      "name": "Hoodie DITZ",
+      "price": 150000,
+      "description": "Hoodie nyaman untuk sehari-hari.",
+      "image": "placeholder.png"
+    },
+    {
+      "id": 3,
+      "name": "Stiker DITZ",
+      "price": 10000,
+      "description": "Stiker keren untuk hiasan laptop atau motor.",
+      "image": "placeholder.png"
+    }
+  ],
+  "orders": [],
+  "admin": {
+    "username": "DiTz store",
+    "password": "admin123"
+  }
+}
