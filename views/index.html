@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ storeName }}</title>
+  <link rel="stylesheet" href="/public/css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>{{ storeName }}</h1>
+    <nav>
+      <a href="/cart">Keranjang</a>
+      <a href="/admin/login">Admin</a>
+    </nav>
+  </header>
+  <main>
+    <section class="products">
+      {{ products }}
+    </section>
+  </main>
+  <footer>
+    <p>Hubungi kami: <a href="mailto:{{ supportEmail }}">{{ supportEmail }}</a> | WA: <a href="https://wa.me/{{ supportPhone }}">{{ supportPhone }}</a></p>
+  </footer>
+</body>
+</html>

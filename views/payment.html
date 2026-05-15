@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pembayaran QRIS - DiTz Store</title>
+  <link rel="stylesheet" href="/public/css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Pembayaran QRIS</h1>
+  </header>
+  <main>
+    <p>Silakan scan QR code di bawah ini menggunakan aplikasi pembayaran yang mendukung QRIS untuk membayar total <strong>{{ amount }}</strong>.</p>
+    <div class="qris">
+      <img src="{{ qrisUrl }}" alt="QRIS Payment" style="max-width:300px;" />
+    </div>
+    <p>Atau copy kode berikut:</p>
+    <textarea readonly rows="4" style="width:100%;">{{ qrisString }}</textarea>
+    <p><a href="/payment-status?transaction_id={{ transactionId }}">Cek status pembayaran</a></p>
+  </main>
+</body>
+</html>

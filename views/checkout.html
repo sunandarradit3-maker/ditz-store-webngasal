@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - DiTz Store</title>
+  <link rel="stylesheet" href="/public/css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Checkout</h1>
+    <nav><a href="/">Beranda</a></nav>
+  </header>
+  <main>
+    <p>Jumlah item: {{ count }}</p>
+    <p>Total bayar: <strong>{{ total }}</strong></p>
+    <form method="POST" action="/checkout">
+      <button type="submit" class="button">Buat Pembayaran QRIS</button>
+    </form>
+  </main>
+</body>
+</html>
